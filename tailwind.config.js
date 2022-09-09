@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./*.html'],
+  darkMode: 'class',
   theme: {
     screens: {
       sm: '480px',
@@ -10,6 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        specialGray: '#e5e3e1',
         brightRed: 'hsl(12, 88%, 59%)',
         brightRedLight: 'hsl(12, 88%, 69%)',
         brightRedSupLight: 'hsl(12, 88%, 95%)',

@@ -650,6 +650,10 @@ video {
   height: 2rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -767,14 +771,19 @@ video {
   border-bottom-left-radius: 9999px;
 }
 
-.bg-brightRed {
+.bg-darkBlue {
   --tw-bg-opacity: 1;
-  background-color: hsl(12 88% 59% / var(--tw-bg-opacity));
+  background-color: hsl(228 39% 23% / var(--tw-bg-opacity));
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-brightRed {
+  --tw-bg-opacity: 1;
+  background-color: hsl(12 88% 59% / var(--tw-bg-opacity));
 }
 
 .bg-brightRedSupLight {
@@ -833,6 +842,10 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-2 {
@@ -903,14 +916,14 @@ video {
 }
 
 body {
-  background-image: url('../img/bg-tablet-pattern.svg');
+  background-image: url("../img/bg-tablet-pattern.svg");
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: 90% -25%;
 }
 
 #cta {
-  background-image: url('../img/bg-simplify-section-desktop.svg');
+  background-image: url("../img/bg-simplify-section-desktop.svg");
   background-repeat: no-repeat;
 }
 
@@ -921,7 +934,7 @@ body {
   }
 
   #cta {
-    background-image: url('../img/bg-simplify-section-mobile.svg');
+    background-image: url("../img/bg-simplify-section-mobile.svg");
   }
 }
 
@@ -936,8 +949,8 @@ body {
 }
 
 .hamburger-top,
-  .hamburger-middle,
-  .hamburger-bottom {
+.hamburger-middle,
+.hamburger-bottom {
   position: absolute;
   top: 0;
   left: 0;
@@ -1003,9 +1016,37 @@ body {
   color: hsl(12 88% 59% / var(--tw-text-opacity));
 }
 
+.hover\:opacity-70:hover {
+  opacity: 0.7;
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.dark .dark\:bg-veryDarkBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(233 12% 13% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-veryLightGray {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-brightRedLight {
+  --tw-bg-opacity: 1;
+  background-color: hsl(12 88% 69% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:text-veryLightGray {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 98% / var(--tw-text-opacity));
+}
+
+.dark .dark\:bg-blend-soft-light {
+  background-blend-mode: soft-light;
 }
 
 @media (min-width: 480px) {
@@ -1103,4 +1144,3 @@ body {
     line-height: 2.5rem;
   }
 }
-  

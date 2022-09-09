@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>Manage</title>
     <link href="css/main.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="dark:bg-veryDarkBlue dark:bg-blend-soft-light">
     <!-- navbar -->
-    <nav class="relative container mx-auto p-6">
+    <nav class="relative w-full p-6">
       <!-- flex container -->
       <div class="flex items-center justify-between">
         <!-- logo -->
-        <div class="pt-2">
+        <div class="p-3 pt-4 rounded-full dark:bg-veryLightGray">
           <img src="img/logo.svg" alt="" />
         </div>
 
         <!-- menu items -->
-        <div class="hidden space-x-6 md:flex">
+        <div class="hidden space-x-6 md:flex dark:text-veryLightGray">
           <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
           <a href="#" class="hover:text-darkGrayishBlue">Product</a>
           <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
@@ -27,9 +27,10 @@
 
         <!-- button -->
         <a
+          id="theme-btn"
           href="#"
-          class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
-          >Get Started</a
+          class="hidden p-3 px-6 pt-2 text-white bg-darkBlue rounded-full baseline md:block hover:opacity-70 dark:bg-brightRedLight"
+          >Dark Mode</a
         >
 
         <!-- Hamburger Icon -->
@@ -67,7 +68,7 @@
         <!-- left item -->
         <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
           <h1
-            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left dark:text-veryLightGray"
           >
             Bring everyone together and build better products!
           </h1>
@@ -101,7 +102,9 @@
       >
         <!-- what's different -->
         <div class="flex flex-col space-y-12 md:w-1/2">
-          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+          <h2
+            class="max-w-md text-4xl font-bold text-center md:text-left dark:text-veryLightGray"
+          >
             What's different about Manage?
           </h2>
           <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
@@ -131,7 +134,9 @@
             </div>
 
             <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
+              <h3
+                class="hidden mb-4 text-lg font-bold md:block dark:text-veryLightGray"
+              >
                 Everything you need in one place
               </h3>
               <p class="text-darkGrayishBlue">
@@ -162,7 +167,9 @@
             </div>
 
             <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
+              <h3
+                class="hidden mb-4 text-lg font-bold md:block dark:text-veryLightGray"
+              >
                 Advanced built-in reports
               </h3>
               <p class="text-darkGrayishBlue">
@@ -192,7 +199,9 @@
             </div>
 
             <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
+              <h3
+                class="hidden mb-4 text-lg font-bold md:block dark:text-veryLightGray"
+              >
                 Everything you need in one place
               </h3>
               <p class="text-darkGrayishBlue">
@@ -211,7 +220,7 @@
       <!-- container to heading and testimonial blocks -->
       <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
         <!-- heading -->
-        <h2 class="text-4xl font-bold text-center">
+        <h2 class="text-4xl font-bold text-center dark:text-veryLightGray">
           What's different about Manage?
         </h2>
 
